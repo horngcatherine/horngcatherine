@@ -1,5 +1,5 @@
-layout: stacked
-style: dark
+layout: sidebar
+style: light
 
 plugins:
   - jekyll-octicons
@@ -28,12 +28,23 @@ projects:
     projects:
     # - repo-name
 
- social_media:
-  facebook: Catherine Horng
-  instagram: the.great.cat.sby
-  linkedin: Catherine Horng
+# social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # hackerrank: your_username
+  # instagram: your_username
+  # keybase: your_username
+  # linkedin: your_username
+  # mastodon: your_username
+  # medium: your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
   # twitter: your_username
-  website: https://horngcatherine.github.io
+  # unsplash: your_username
+  # vk: your_username
+  # website: http://your_website_url
+  # youtube: your_username
 
 topics:
   - name: CSS
@@ -41,3 +52,7 @@ topics:
     image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
 
   - name: Web design
+
+  - name: Sass
+    web_url: https://github.com/topics/sass
+    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/sass/sass.png
