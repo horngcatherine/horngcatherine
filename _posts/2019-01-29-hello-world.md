@@ -1,13 +1,12 @@
 ---
-title: "Welcome to Jekyll!"
+title: "Welcome to my website!"
 published: true
 ---
 
-**Hello world**, this is my first Jekyll blog post.
-
+**Hello world**, this is my first website.
 I hope you like it!
 
-# Highlighter
+<!-- # Highlighter
 ## Ruby
 ```ruby
 def show
@@ -72,4 +71,4 @@ body {
 one: Mark McGwire
 two: Sammy Sosa
 three: Ken Griffey
-```
+``` -->
