@@ -77,55 +77,57 @@ function getRandom(array) {
   return array[Math.floor(Math.random() * array.length)]
 }
 
-let subject = getRandom(subjlist)
-let predicate = ""
-let you = false
-if (subject == "you") { you = true }
-let adj = getRandom(adjlist)
-let noun = getRandom(nounlist)
-let adjnoun = adj + " " + noun
-let subj2 = getRandom(subjlist)
-let youverb = getRandom(youverblist)
-let pplverb = getRandom(pplverblist)
-let pplobj = ""
-let compliment = ""
+function compliment() {
+  let subject = getRandom(subjlist)
+  let predicate = ""
+  let you = false
+  if (subject == "you") { you = true }
+  let adj = getRandom(adjlist)
+  let noun = getRandom(nounlist)
+  let adjnoun = adj + " " + noun
+  let subj2 = getRandom(subjlist)
+  let youverb = getRandom(youverblist)
+  let pplverb = getRandom(pplverblist)
+  let pplobj = ""
+  let compliment = ""
 
-if (you) {
-  if (youverb == "remind") {
-    predicate = youverb + " " +
-      subj2 + " of a " + adjnoun
-  }
-  else if (youverb == "make") {
-    predicate = youverb + " " +
-      subj2 + " feel like a " + adjnoun
+  if (you) {
+    if (youverb == "remind") {
+      predicate = youverb + " " +
+        subj2 + " of a " + adjnoun
+    }
+    else if (youverb == "make") {
+      predicate = youverb + " " +
+        subj2 + " feel like a " + adjnoun
+    }
+    else {
+      predicate = youverb + " a " + adjnoun
+    }
   }
   else {
-    predicate = youverb + " a " + adjnoun
+    if (pplverb == "eat") {
+      pplobj = getRandom(foodlist)
+    }
+    else if (pplverb == "drink") {
+      pplobj = getRandom(drinklist)
+    }
+    else if (pplverb == "say") {
+      pplobj = getRandom(saylist)
+    }
+    else if (pplverb == "love") {
+      pplobj = "your " + adjnoun
+    }
+    else if (pplverb == "sing") {
+      pplobj = getRandom(justsong)
+    }
+    else {
+      pplobj = getRandom(musiclist + justsong)
+    }
+    predicate = getRandom(
+      regverblist) + " " + getRandom(modverblist) + " you " + pplverb + " " + pplobj
   }
-}
-else {
-  if (pplverb == "eat") {
-    pplobj = getRandom(foodlist)
-  }
-  else if (pplverb == "drink") {
-    pplobj = getRandom(drinklist)
-  }
-  else if (pplverb == "say") {
-    pplobj = getRandom(saylist)
-  }
-  else if (pplverb == "love") {
-    pplobj = "your " + adjnoun
-  }
-  else if (pplverb == "sing") {
-    pplobj = getRandom(justsong)
-  }
-  else {
-    pplobj = getRandom(musiclist + justsong)
-  }
-  predicate = getRandom(
-    regverblist) + " " + getRandom(modverblist) + " you " + pplverb + " " + pplobj
+
+  compliment = subject + " " + predicate + "."
+  return compliment
 }
 
-compliment = subject + " " + predicate + "."
-
-console.log(compliment)
