@@ -1,3 +1,6 @@
+var up = document.getElementById('GFG_UP');
+var down = document.getElementById('GFG_DOWN');
+
 // arrays
 let subjlist = ["you", "strangers all", "your old classmates", "people",
   "your parents", "your grandparents", "kids", "coworkers",
@@ -130,9 +133,6 @@ function compliment() {
   compliment = subject + " " + predicate + "."
   return compliment
 }
-
-var up = document.getElementById('GFG_UP');
-var down = document.getElementById('GFG_DOWN');
 
 var arr = ["GFG_1", "GeeksForGeeks",
   "Geeks", "Computer Science Portal"];
