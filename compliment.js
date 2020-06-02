@@ -1,5 +1,5 @@
-var up = document.getElementById('GFG_UP');
-var down = document.getElementById('GFG_DOWN');
+var up = document.getElementById('UP');
+var down = document.getElementById('DOWN');
 
 // arrays
 let subjlist = ["you", "strangers all", "your old classmates", "people",
@@ -130,18 +130,5 @@ function compliment() {
       regverblist) + " " + getRandom(modverblist) + " you " + pplverb + " " + pplobj
   }
 
-  compliment = subject + " " + predicate + "."
-  return compliment
+  down.innerHTML = subject + " " + predicate + "."
 }
-
-var arr = ["GFG_1", "GeeksForGeeks",
-  "Geeks", "Computer Science Portal"];
-
-up.innerHTML = "Click on the button to check "
-  + "the type of element.<br><br>" + arr;
-
-function GFG_Fun() {
-  down.innerHTML =
-    arr[Math.floor(Math.random() * arr.length)];
-}
-

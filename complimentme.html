@@ -2,28 +2,55 @@
 <html>
 
 <head>
-  <title>Catherine Horng - elements</title>
+  <title>Catherine Horng - Free Compliments</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="subpage">
-  <h1>
-    Give me a compliment!
-  </h1>
 
-  <p id="GFG_UP" style="font-size: 15px; font-weight: bold;">
-  </p>
+  <!-- Header -->
+  <header id="header">
+    <div class="logo"><a href="index.html">Catherine Horng <span>the website!</span></a></div>
+    <a href="#menu" class="toggle"><span>Menu</span></a>
+  </header>
 
-  <button id="button" onclick="GFG_Fun()">
-    Compliment me
-  </button>
+  <!-- Nav -->
+  <nav id="menu">
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="thoughts.html">Thoughts</a></li>
+    </ul>
+  </nav>
 
-  <p id="GFG_DOWN" style="font-size: 24px; font-weight: bold">
-  </p>
+  <!-- Four -->
+  <section id="four" class="wrapper style3">
+    <div class="inner">
 
-  <script src="compliments.js"></script>
+      <header class="align-center">
+        <h2>Free Compliments!</h2>
+        <p id="UP"></p>
+
+        <button id="button" onclick="compliment()">
+          Compliment Me!</button>
+
+        <p id="DOWN"></p>
+
+        <script src="compliment.js">
+          var up = document.getElementById('UP');
+          var down = document.getElementById('DOWN');
+
+          function compliment() {
+            down.innerHTML =
+              arr[Math.floor(Math.random() * arr.length)];
+          }  
+        </script>
+      </header>
+
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer id="footer" class="wrapper">
