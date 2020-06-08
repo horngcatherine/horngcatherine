@@ -3869,7 +3869,7 @@
 /* Footer */
 
 	#footer {
-		padding: 6rem 0 4rem 0 ;
+		padding: 0rem 0 0rem 0 ;
 		background: #f2f2f2;
 	}
 
@@ -3884,7 +3884,7 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 0rem 0 1rem 0 ;
+				padding: 0rem 0 0rem 0 ;
 			}
 
 		}
